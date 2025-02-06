@@ -35,11 +35,18 @@ class ConvoNewsletterCrew:
 
     # CLAUDE 3.5 SONNET
     # AGENTOPS TRACE: d86096dd-ca0b-461f-b5a2-a5892324582c
-    llm = LLM(
-        model="openrouter/anthropic/claude-3.5-sonnet",
-        base_url="https://openrouter.ai/api/v1",
-        api_key=os.getenv("OPEN_ROUTER_API_KEY"),
-    )
+    # llm = LLM(
+    #     model="openrouter/anthropic/claude-3.5-sonnet",
+    #     base_url="https://openrouter.ai/api/v1",
+    #     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
+    # )
+
+    # GEMINI FLASH 2.0
+    # AGENTOPS TRACE: 04a8b83-dc45-48f2-8294-ca57f59b4544
+    # llm = LLM(
+    #     model="openrouter/google/gemini-2.0-flash-001",
+    #     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
+    # )
 
     # O3-MINI - REASONING EFFORT MEDIUM
     # AGENTOPS TRACE: 299c6e7d-78dc-4d35-8b6b-81987c3f4471

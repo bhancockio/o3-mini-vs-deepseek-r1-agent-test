@@ -11,11 +11,11 @@ agentops.init()
 # --- OpenRouter ---
 # DEEPSEEK-R1
 # AGENTOPS TRACE: 5dbf1ed8-80d1-47e9-b61c-bd5de33fbbfe
-llm = LLM(
-    model="openrouter/deepseek/deepseek-r1",
-    base_url="https://openrouter.ai/api/v1",
-    api_key=os.getenv("OPEN_ROUTER_API_KEY"),
-)
+# llm = LLM(
+#     model="openrouter/deepseek/deepseek-r1",
+#     base_url="https://openrouter.ai/api/v1",
+#     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
+# )
 
 # DEEPSEEK-V3
 # AGENTOPS TRACE: 561ccbfa-872c-4b97-82eb-997e68f120ae
@@ -32,6 +32,13 @@ llm = LLM(
 #     base_url="https://openrouter.ai/api/v1",
 #     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
 # )
+
+# GEMINI FLASH 2.0
+# AGENTOPS TRACE: 30a09038-60d4-4ad0-be00-20e4c68dfbb5
+llm = LLM(
+    model="openrouter/google/gemini-2.0-flash-001",
+    api_key=os.getenv("OPEN_ROUTER_API_KEY"),
+)
 
 # O3-MINI - REASONING EFFORT MEDIUM
 # AGENTOPS TRACE: 2e261a85-404c-4d3d-a50a-606137ec8c8d
@@ -58,7 +65,7 @@ def get_data():
     """
     try:
         base_dir = os.path.dirname(__file__)
-        file_path = os.path.join(base_dir, "data", "knowledge_base_59k.txt")
+        file_path = os.path.join(base_dir, "data", "knowledge_base_900k.txt")
 
         with open(file_path, "r", encoding="utf-8") as file:
             content = file.read()

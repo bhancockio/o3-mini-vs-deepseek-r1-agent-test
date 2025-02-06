@@ -34,9 +34,16 @@ search_tool = SerperDevTool()
 
 # CLAUDE 3.5 SONNET
 # AGENTOPS TRACE: a5e9f8bd-b7a3-421b-96b5-3d6855becda0
+# llm = LLM(
+#     model="openrouter/anthropic/claude-3.5-sonnet",
+#     base_url="https://openrouter.ai/api/v1",
+#     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
+# )
+
+# GEMINI FLASH 2.0
+# AGENTOPS TRACE: 30a09038-60d4-4ad0-be00-20e4c68dfbb5
 llm = LLM(
-    model="openrouter/anthropic/claude-3.5-sonnet",
-    base_url="https://openrouter.ai/api/v1",
+    model="openrouter/google/gemini-2.0-flash-001",
     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
 )
 
