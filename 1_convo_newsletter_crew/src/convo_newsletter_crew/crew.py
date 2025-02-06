@@ -34,9 +34,9 @@ class ConvoNewsletterCrew:
     # )
 
     # CLAUDE 3.5 SONNET
-    # AGENTOPS TRACE: ec8b3ffb-a32e-415e-b0d2-58fe5dafba7b
+    # AGENTOPS TRACE: d86096dd-ca0b-461f-b5a2-a5892324582c
     llm = LLM(
-        model="openrouter/deepseek/deepseek-chat",
+        model="openrouter/anthropic/claude-3.5-sonnet",
         base_url="https://openrouter.ai/api/v1",
         api_key=os.getenv("OPEN_ROUTER_API_KEY"),
     )

@@ -33,9 +33,9 @@ search_tool = SerperDevTool()
 # )
 
 # CLAUDE 3.5 SONNET
-# AGENTOPS TRACE: bcd82686-b4d0-47fc-9356-d76c3290b31c
+# AGENTOPS TRACE: a5e9f8bd-b7a3-421b-96b5-3d6855becda0
 llm = LLM(
-    model="openrouter/deepseek/deepseek-chat",
+    model="openrouter/anthropic/claude-3.5-sonnet",
     base_url="https://openrouter.ai/api/v1",
     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
 )

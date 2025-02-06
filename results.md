@@ -20,7 +20,7 @@
 | o3-mini           | 50 s  | 15,484      | 8,943        | $0.06 | Yes                    |
 | deepseek-r1       | 576 s | 12,756      | 6,417        | $0.02 | Yes                    |
 | deepseek-v3       | 644 s | 17,740      | 5,994        | $0.01 | Yes                    |
-| Claude 3.5 Sonnet | 381 s | 17,459      | 5,659        | $0.14 | Yes                    |
+| Claude 3.5 Sonnet | 230 s | 45,256      | 11,082       | $0.30 | Yes                    |
 
 ## Test 2 - Tools Test
 
@@ -30,6 +30,15 @@
 | o3-mini           | 43 s  | 7,937       | 3,864        | $0.03 | Pass                  |                                                                                      |
 | deepseek-r1       | 224 s | 3,981       | 2,025        | $0.01 | Failed                | Got 80% of the way through, then failed by calling the wrong tool and erroring out   |
 | deepseek-v3       |  -    |      -      |      -       |  -    | Failed                |                                                                                      |
-| Claude 3.5 Sonnet | 89 s  | 7,161       | 604          | $0.03 | Pass                  |                                                                                      |
+| Claude 3.5 Sonnet | 27.5 s| 9,018       | 573          | $0.04 | Pass                  |                                                                                      |
 
 ## Test 3 - Context Window Test
+
+| Model             | Time  | Input Token | Output Token | Cost   | Found Information | % of Context Used |
+|-------------------|-------|-------------|--------------|--------|-------------------|-------------------|
+| gpt-4o            | 17 s  | 126,085     | 86           | $0.32  | Pass              | 95.31%            |
+| o3-mini           | 19 s  | 190,288     | 1,015        | $0.21  | Pass              | 94.71%            |
+| deepseek-r1       | 53.7 s| 60,491      | 735          | $0.03  | Pass              | 92.19%            |
+| deepseek-v3       | 296 s | 93,350      | 2,173        | $0.01  | Pass              | 92.19%            |
+| Claude 3.5 Sonnet | 67 s  | 56,138      | 1,456        | $0.19  | Pass              | 13%               |
+
