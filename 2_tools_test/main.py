@@ -18,11 +18,11 @@ search_tool = SerperDevTool()
 # --- OpenRouter ---
 # DEEPSEEK-R1
 # AGENTOPS TRACE: 3fff57df-a05a-4183-8640-c0340bf825e5
-llm = LLM(
-    model="openrouter/deepseek/deepseek-r1",
-    base_url="https://openrouter.ai/api/v1",
-    api_key=os.getenv("OPEN_ROUTER_API_KEY"),
-)
+# llm = LLM(
+#     model="openrouter/deepseek/deepseek-r1",
+#     base_url="https://openrouter.ai/api/v1",
+#     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
+# )
 
 # DEEPSEEK-V3
 # AGENTOPS TRACE: FAILED
@@ -31,6 +31,14 @@ llm = LLM(
 #     base_url="https://openrouter.ai/api/v1",
 #     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
 # )
+
+# CLAUDE 3.5 SONNET
+# AGENTOPS TRACE: bcd82686-b4d0-47fc-9356-d76c3290b31c
+llm = LLM(
+    model="openrouter/deepseek/deepseek-chat",
+    base_url="https://openrouter.ai/api/v1",
+    api_key=os.getenv("OPEN_ROUTER_API_KEY"),
+)
 
 # O3-MINI - REASONING EFFORT MEDIUM
 # AGENTOPS TRACE: 53a60ff3-e482-4e93-bd38-72eb39fbc46e

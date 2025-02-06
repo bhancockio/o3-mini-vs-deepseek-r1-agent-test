@@ -16,17 +16,43 @@ class ConvoNewsletterCrew:
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
 
-    # Using OpenRouter
+    # --- OpenRouter ---
+    # DEEPSEEK-R1
+    # AGENTOPS TRACE: 9e5e4409-7602-4eec-8f0d-7b318f80f501
+    # llm = LLM(
+    #     model="openrouter/deepseek/deepseek-r1",
+    #     base_url="https://openrouter.ai/api/v1",
+    #     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
+    # )
+
+    # DEEPSEEK-V3
+    # AGENTOPS TRACE: e0c57b3b-5961-4b3b-bae5-73e5bae6dc4d
+    # llm = LLM(
+    #     model="openrouter/deepseek/deepseek-chat",
+    #     base_url="https://openrouter.ai/api/v1",
+    #     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
+    # )
+
+    # CLAUDE 3.5 SONNET
+    # AGENTOPS TRACE: ec8b3ffb-a32e-415e-b0d2-58fe5dafba7b
     llm = LLM(
-        model="openrouter/deepseek/deepseek-r1",
+        model="openrouter/deepseek/deepseek-chat",
         base_url="https://openrouter.ai/api/v1",
         api_key=os.getenv("OPEN_ROUTER_API_KEY"),
     )
 
+    # O3-MINI - REASONING EFFORT MEDIUM
+    # AGENTOPS TRACE: 299c6e7d-78dc-4d35-8b6b-81987c3f4471
     # llm = LLM(
-    #     model="openrouter/openai/o3-mini",
-    #     base_url="https://openrouter.ai/api/v1",
-    #     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
+    #     model="o3-mini",
+    #     api_key=os.getenv("OPENAI_API_KEY"),
+    # )
+
+    # gpt-4o
+    # AGENTOPS TRACE: b98e3850-2e9b-4d26-81e2-37949a222a31
+    # llm = LLM(
+    #     model="gpt-4o",
+    #     api_key=os.getenv("OPENAI_API_KEY"),
     # )
 
     @agent
