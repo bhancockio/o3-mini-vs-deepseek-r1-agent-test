@@ -2,14 +2,14 @@
 
 ## Model Comparison
 
-| Model                     | Context Window   | Max Output Tokens | SWE-Bench Score | Input Price (1M) | Output Price (1M) | Throughput (t/s) |
-|---------------------------|------------------|-------------------|-----------------|------------------|-------------------|------------------|
-| o3-mini                   | 200,000 tokens   | 100,000 tokens    | 49.3            | $1.10            | $4.40             | 1637             |
-| deepseek-v3               | 64,000 tokens    | 8,000 tokens      | 42.0            | $0.14            | $0.28             | 22               |
-| deepseek-r1               | 64,000 tokens    | 8,000 tokens      | 49.2            | $0.55            | $2.19             | 61               |
-| gpt-4o                    | 128,000 tokens   | 16,384 tokens     | 33.2            | $2.50            | $10.00            | 64               |
-| Claude 3.5 Sonnet         | 200,000 tokens   | 8,192 tokens      | 49.0            | $3.00            | $15.00            | 57               |
-| Gemini 2.0 Flash          | 1,000,000 tokens | 8,192 tokens      | 51.8            | $0.10            | $0.40             | 248              |
+| Model                     | Context Window   | Max Output Tokens | Reasoning & Knowledge Score | Input Price (1M) | Output Price (1M) | Throughput (t/s) |
+|---------------------------|------------------|-------------------|-----------------------------|------------------|-------------------|------------------|
+| o3-mini                   | 200,000 tokens   | 100,000 tokens    | 86%                         | $1.10            | $4.40             | 1637             |
+| deepseek-v3               | 64,000 tokens    | 8,000 tokens      | 87%                         | $0.14            | $0.28             | 22               |
+| deepseek-r1               | 64,000 tokens    | 8,000 tokens      | 92%                         | $0.55            | $2.19             | 61               |
+| gpt-4o                    | 128,000 tokens   | 16,384 tokens     | 86%                         | $2.50            | $10.00            | 64               |
+| Claude 3.5 Sonnet         | 200,000 tokens   | 8,192 tokens      | 91%                         | $3.00            | $15.00            | 57               |
+| Gemini 2.0 Flash          | 1,000,000 tokens | 8,192 tokens      | 88%                         | $0.10            | $0.40             | 248              |
 
 **Note:** Throughput values found on OpenRouter and change daily based on availability and usage.
 
