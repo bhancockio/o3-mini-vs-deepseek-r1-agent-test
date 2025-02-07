@@ -35,13 +35,13 @@
 | Claude 3.5 Sonnet| 27.5 s| 9,018       | 573          | $0.04  | Pass                  |
 | Gemini 2.0 Flash | 15 s  | 17,774      | 452          | $0.003 | Pass                  |
 
-## Test 3 - Context Window Test
+## Test 3 – Context Window Test (Reformatted)
 
-| Model            | Time  | Input Token | Output Token | Cost   | Found Information | % of Context Used |
-|------------------|-------|-------------|--------------|--------|-------------------|-------------------|
-| gpt-4o           | 17 s  | 126,085     | 86           | $0.32  | Pass              | 95.31%            |
-| o3-mini          | 19 s  | 190,288     | 1,015        | $0.21  | Pass              | 94.71%            |
-| deepseek-r1      | 53.7 s| 60,491      | 735          | $0.03  | Pass              | 92.19%            |
-| deepseek-v3      | 296 s | 93,350      | 2,173        | $0.01  | Pass              | 92.19%            |
-| Claude 3.5 Sonnet| 67 s  | 56,138      | 1,456        | $0.19  | Pass              | 13%               |
-| Gemini 2.0 Flash | 41 s  | 800,878     | 242          | $0.08  | Pass              | 80.09%            |
+| Model              | Time    | Input Tokens | Output Tokens | Cost   | Found Information | Context Used                       |
+|--------------------|---------|--------------|---------------|--------|-------------------|------------------------------------|
+| gpt-4o             | 17 s    | 126,085      | 86            | $0.32  | Pass              | 95.31% (122k of 128k tokens)       |
+| o3-mini            | 19 s    | 190,288      | 1,015         | $0.21  | Pass              | 95.00% (190k of 200k tokens)       |
+| deepseek-r1        | 53.7 s  | 60,491       | 735           | $0.03  | Pass              | 92.19% (59k of 64k tokens)         |
+| deepseek-v3        | 296 s   | 93,350       | 2,173         | $0.01  | Pass              | 46.88% (30k of 64k tokens)         |
+| Claude 3.5 Sonnet  | 67 s    | 56,138       | 1,456         | $0.19  | Pass              | 13.00% (26k of 200k tokens)        |
+| Gemini 2.0 Flash   | 41 s    | 900,878      | 242           | $0.08  | Pass              | 90.00% (900k of 1,000k tokens)     |

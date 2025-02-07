@@ -19,11 +19,11 @@ class ConvoNewsletterCrew:
     # --- OpenRouter ---
     # DEEPSEEK-R1
     # AGENTOPS TRACE: 9e5e4409-7602-4eec-8f0d-7b318f80f501
-    # llm = LLM(
-    #     model="openrouter/deepseek/deepseek-r1",
-    #     base_url="https://openrouter.ai/api/v1",
-    #     api_key=os.getenv("OPEN_ROUTER_API_KEY"),
-    # )
+    llm = LLM(
+        model="openrouter/deepseek/deepseek-r1",
+        base_url="https://openrouter.ai/api/v1",
+        api_key=os.getenv("OPEN_ROUTER_API_KEY"),
+    )
 
     # DEEPSEEK-V3
     # AGENTOPS TRACE: e0c57b3b-5961-4b3b-bae5-73e5bae6dc4d
