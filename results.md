@@ -35,7 +35,7 @@
 | Claude 3.5 Sonnet| 27.5 s| 9,018       | 573          | $0.04  | Pass                  |
 | Gemini 2.0 Flash | 15 s  | 17,774      | 452          | $0.003 | Pass                  |
 
-## Test 3 – Context Window Test (Reformatted)
+## Test 3 – Needle in the haystack test
 
 | Model              | Time    | Input Tokens | Output Tokens | Cost   | Found Information | Context Used                       |
 |--------------------|---------|--------------|---------------|--------|-------------------|------------------------------------|
